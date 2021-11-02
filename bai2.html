@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+    let length = +prompt(" Nhập số phần tử : ");
+    let array = new Array(length);
+    for (let i = 0; i < array.length; i++) {
+        array[i] = +prompt('Nhập phần tử');
+    }
+    document.write(array + '<br>');
+    let numB = +prompt("nhap so can tim");
+    function search(array, number) {
+        for (let i = 0; i < array.length; i++) {
+            if (array[i] !== number){
+                continue;
+            } else {
+                document.write(number+ ' nam trong mang '+ array +'<br/>');
+                document.write(number+' o vi tri thu '+array[i] + ' trong mang');
+            }
+        }
+
+    }
+
+search(array,numB);
+</script>
+</body>
+</html>

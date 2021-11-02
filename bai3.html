@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    let str = prompt('Nhap chuoi bat ky');
+    let array = str.split('');
+
+    function negative(array) {
+        let count = 0
+        for (let i = 0; i < array.length; i++) {
+            switch (array[i]) {
+                case 'a':
+                case 'e':
+                case 'u':
+                case 'o':
+                case 'i':
+                    count += 1;
+                    break;
+            }
+        }
+        if (count === 0) {
+            return 'false';
+
+        } else {
+            return count;
+        }
+
+    }
+
+let ansewr = negative(array);
+    document.write(ansewr)
+</script>
+</body>
+</html>
